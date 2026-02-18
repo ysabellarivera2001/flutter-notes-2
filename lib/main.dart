@@ -1,6 +1,13 @@
 import 'package:flutter/material.dart';
+import 'startScreen.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(
+    MaterialApp(
+      home: Scaffold(
+        body: startScreen(),
+      ),
+    ),
+  );
 }
 
