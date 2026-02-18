@@ -12,8 +12,17 @@ class _QuizQuestionsState extends State<QuizQuestions> {
 
   @override
   Widget build(BuildContext context) {
-    return Text(
-      "Welcome to the Questions"
-    );
+    return Card(
+        child: Column(
+          children: [
+            Text(
+              "Welcome to the Questions",
+              style: TextStyle(
+                fontSize: 35,
+              )
+              )
+          ],
+        )
+      );
   }
 }
