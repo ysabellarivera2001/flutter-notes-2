@@ -59,7 +59,7 @@ class _QuizQuestionsState extends State<QuizQuestions> {
             AnswerButton(currentQuestion.answers[2], (){}),
             AnswerButton(currentQuestion.answers[3], (){}),
             */ 
-            ...currentQuestion.answers.map((answers) {
+            ...currentQuestion.getShuffledAnswer().map((answers) {
               return AnswerButton(answers, answerQuestion);
             })
           ]

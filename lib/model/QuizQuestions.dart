@@ -7,4 +7,10 @@ class Quizquestions {
   final String text;
   final List<String> answers; //all possible answers
 
+  List<String> getShuffledAnswer() {
+    final shuffledList = List.of(answers); //copying current list of answers to a new list
+    shuffledList.shuffle(); //shuffling the new list of answers
+    return shuffledList; //returning the new list of answers
+  }
+
 }
